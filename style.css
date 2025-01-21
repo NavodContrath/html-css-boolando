@@ -26,29 +26,23 @@
 
     #first-row {
         margin: 2rem auto;
-        height: 400px;
-        background-color: grey;
+        height: 600px;
+        /* background-color: grey; */
 
     }
 
     #second-row {
         margin: 2rem auto;
-        height: 400px;
+        height: 600px;
         background-color: grey;
 
     }
 
-    .card {
+    /* .card {
         background-color: aqua;
         border: 1px dotted black;
-
-        div,
-        p,
-        h3 {
-            border: 1px dotted black;
-        }
     }
-
+ */
     footer {
         height: 66px;
 
@@ -92,12 +86,59 @@
 .card-img {
     height: 85%;
     text-align: center;
+    position: relative;
 
     img {
         height: 100%;
         width: auto;
     }
 }
+
+.card-img:hover .fade-img {
+    display: block;
+}
+
+.heart {
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 318px;
+}
+
+.fade-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.tag-sale {
+    width: 30px;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    background-color: red;
+    border-radius: 1px solid red;
+    font-size: small;
+    color: white;
+}
+
+.tag {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    background-color: green;
+    border-radius: 1px solid green;
+    font-size: small;
+    color: white;
+
+}
+
+
 
 /* #endregion-utilities */
 header {
