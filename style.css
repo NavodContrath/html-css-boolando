@@ -3,31 +3,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --var-tool-bar: #ff6900;
+    --var-primary-text: white;
 }
 
 /* #endregion-common */
 /* #region-debug */
 .debug {
     header {
-        height: 66px;
+        height: 50px;
 
         #tool-bar {
             height: 100%;
-
-            #genre {
-                flex-grow: 1;
-                border: 1px dotted black;
-            }
-
-            #logo {
-                flex-grow: 1;
-                border: 1px dotted black;
-            }
-
-            #tools {
-                flex-grow: 1;
-                border: 1px dotted black;
-            }
+            border: 1px dotted black;
         }
 
     }
@@ -74,6 +66,7 @@
 
 /* #endregion-debug */
 /* #region-utilities */
+
 .primary-cont {
     width: 80%;
     margin: auto;
@@ -89,6 +82,35 @@
 }
 
 /* #endregion-utilities */
+header {
+    background-color: var(--var-tool-bar);
+
+    #tool-bar {
+        color: var(--var-primary-text);
+        align-items: center;
+    }
+
+    #genre {
+        width: 40%;
+
+    }
+
+    #logo {
+        width: 20%;
+
+        img {
+            max-width: 80%;
+        }
+
+    }
+
+    #tools {
+        width: 40%;
+        text-align: end;
+
+    }
+}
+
 #first-row {
     justify-content: space-between;
 }
