@@ -1,0 +1,98 @@
+/* #region-common */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion-common */
+/* #region-debug */
+.debug {
+    header {
+        height: 66px;
+
+        #tool-bar {
+            height: 100%;
+
+            #genre {
+                flex-grow: 1;
+                border: 1px dotted black;
+            }
+
+            #logo {
+                flex-grow: 1;
+                border: 1px dotted black;
+            }
+
+            #tools {
+                flex-grow: 1;
+                border: 1px dotted black;
+            }
+        }
+
+    }
+
+    #first-row {
+        margin: 2rem auto;
+        height: 400px;
+        background-color: grey;
+
+    }
+
+    #second-row {
+        margin: 2rem auto;
+        height: 400px;
+        background-color: grey;
+
+    }
+
+    .card {
+        background-color: aqua;
+        border: 1px dotted black;
+
+        div,
+        p,
+        h3 {
+            border: 1px dotted black;
+        }
+    }
+
+    footer {
+        height: 66px;
+
+        #foot-container {
+            border: 1px dotted black;
+            height: 100%;
+
+            #first-column,
+            #second-column {
+                border: 1px dotted black;
+            }
+        }
+    }
+}
+
+/* #endregion-debug */
+/* #region-utilities */
+.primary-cont {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.card {
+    height: 100%;
+    width: 30%;
+}
+
+/* #endregion-utilities */
+#first-row {
+    justify-content: space-between;
+}
+
+#second-row {
+    justify-content: space-between;
+}
