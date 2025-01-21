@@ -89,6 +89,16 @@
     text-decoration: line-through;
 }
 
+.card-img {
+    height: 85%;
+    text-align: center;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
 /* #endregion-utilities */
 header {
     background-color: var(--var-tool-bar);
@@ -122,15 +132,6 @@ header {
 #first-row {
     justify-content: space-between;
 
-    .card-img {
-        height: 85%;
-        text-align: center;
-
-        img {
-            height: 100%;
-            width: auto;
-        }
-    }
 }
 
 #second-row {
